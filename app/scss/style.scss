@@ -120,6 +120,7 @@
   text-align: center;
   padding-top: 185px;
   color: $lightgray;
+
   &-title {
     font-size: 60px;
     line-height: 70px;
@@ -226,7 +227,9 @@
 //end slider
 
 //start features
-
+.features{
+  background-color: #fff;
+}
 .features__inner {
   margin-top: 195px;
   margin-bottom: 120px;
@@ -256,3 +259,162 @@
 }
 
 //end features
+
+// start product-slider
+
+  .product-slider{
+    background-color: $gray;
+    padding: 120px 0;
+    .product__title{
+      margin-bottom: 50px;
+    }
+    &__inner{
+      display: flex;
+    }
+  }
+  .product-slider__item{
+    display: flex !important;
+    position: relative;
+    
+    &-img{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 555px;
+      height: 450px;
+    }
+    &-info{
+      background-color: #fff;
+      max-width: 610px;
+      padding: 50px;
+      max-height: 450px;
+    }
+    &-title{
+      font-size: 24px;
+      font-weight: 500;
+      color: #000;
+    }
+    &-theme{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 24px;
+      .author{
+        padding-left: 40px;
+        margin-right: 15px;
+        background-repeat: no-repeat;
+        a{
+          color: #000;  
+        }
+      }
+      .product-theme{
+        padding-left: 40px;
+        background-repeat: no-repeat;
+        background-position: 10px 8px;
+        a{
+          color: #000;
+        }
+      }
+    }
+    &-text{
+      font-size: 15px;
+      line-height: 30px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+    &-category{
+      span{
+        background-color: #f1f3f6;
+        border-radius: 19px;
+        padding: 3px 14px;
+        color: #868c96;
+        font-size: 15px;
+        line-height: 30px;
+        
+      }
+      padding-bottom: 40px;
+      border-bottom: 1px solid #ececec;
+    }
+    &-box{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 22px;
+    }
+    &-price{  
+      background-color: $blue;
+      border-radius: 20px;
+      padding: 2px 14px;
+      color: #fff;
+      font-weight: 500;
+      margin-right: 20px;
+      cursor: pointer;
+      height: 32px;
+    }
+    &-like{
+      padding-left: 26px;
+      padding-right: 20px;
+      height: 32px;
+      position: relative;
+      img{
+        position: absolute;
+        left: 0;
+        top: 9px;
+      }
+      cursor: pointer;
+    }
+    &-cart {
+      position: relative;
+      color: $blue;
+      margin-right: auto;
+      cursor: pointer;
+      height: 32px;
+      padding-left: 20px;
+      img{
+        position: absolute;
+        left: 0;
+        top: 8px;
+      }
+    }
+  }
+  .product__title{
+    position: relative;
+    span{
+      position: absolute;
+      background-color: $purple;
+      display: block;
+      width: 85px;
+      height: 40px;
+      right: 30px;
+      top: 35px;
+      border-radius: 20px;
+    }
+  }
+  .slick-arrow{
+    background-color: transparent;
+    border: none;
+  }
+  .slick-prev,
+  .slick-next{
+    position: absolute;
+    top: -113px;
+    right: 0;
+    font-size: 0;
+    content: '';
+    cursor: pointer;
+    outline: none;
+  }
+  .slick-prev{
+    background-image: url(../images/icons/chevron-left.png);
+    width: 8px;
+    height: 14px;
+    background-repeat: no-repeat;
+    right: 80px;
+    
+  }
+  .slick-next{
+    background-image: url(../images/icons/chevron-right.png);
+    width: 8px;
+    height: 14px;
+    background-repeat: no-repeat;
+    right: 40px;
+  }
+// end product-slider
