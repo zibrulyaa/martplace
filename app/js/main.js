@@ -16,5 +16,6 @@ $(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: true
-    })
+    });
+    var mixer = mixitup('.mix__products-inner');
 })
