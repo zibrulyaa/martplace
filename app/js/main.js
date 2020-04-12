@@ -12,4 +12,9 @@ $(function(){
         slidesToScroll:1,
         slidesToShow: 1
     });
+    $('.followers-slider__inner').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true
+    })
 })
