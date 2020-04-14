@@ -640,3 +640,62 @@
 }
 
 //end followers-slider
+
+// start facts
+
+.facts {
+  background-color: #212225;
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.facts__item {
+  text-align: center;
+
+  span {
+    padding-top: 100px;
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+    position: relative;
+    img{
+      position: absolute;
+      top: 20px;
+      left: 30px;
+    }
+  }
+  color: #fff;
+  font-size: 18px;
+}
+.fact-1 {
+  span {
+    color: #feb71d;
+  }
+}
+.fact-2 {
+  span {
+    color: #58c9e9;
+    img{
+      left: 15px;
+    }
+  }
+}
+.fact-3 {
+  span {
+    color: #77de51;
+    img{
+      left: 45px;
+    }
+  }
+}
+.fact-4 {
+  span {
+    color: #ff6a6d;
+    img{
+      left: 30px;
+    }
+  }
+}
+// end facts
