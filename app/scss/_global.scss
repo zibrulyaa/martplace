@@ -26,6 +26,8 @@ a {
 }
 ul,
 li {
+  margin: 0;
+  padding: 0;
   display: inline-block;
 }
 .title {
@@ -36,16 +38,16 @@ li {
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   border-radius: 4px;
 }
-.rateyo{
+.rateyo {
   display: inline-block;
 }
-.container__fluid{
+.container__fluid {
   max-width: 1550px;
   margin: 0 auto;
   padding: 0 30px;
 }
-@media(max-width: 720px){
-  .container-fluid{
+@media (max-width: 720px) {
+  .container-fluid {
     padding: 0 15px;
   }
 }
