@@ -1,34 +1,10 @@
 @font-face {
-  font-family: "Quicksand-Light", sans-serif;
-  src: url("fonts/Quicksand-Light.woff2") format("woff2"),
-    url("fonts/Quicksand-Light.woff") format("woff");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Quicksand-Regular", sans-serif;
-  src: url("fonts/Quicksand-Regular.woff2") format("woff2"),
-    url("fonts/Quicksand-Regular.woff") format("woff");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Quicksand-Medium", sans-serif;
-  src: url("fonts/Quicksand-Medium.woff2") format("woff2"),
-    url("fonts/Quicksand-Medium.woff") format("woff");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Quicksand-Bold", sans-serif;
-  src: url("fonts/Quicksand-Bold.woff2") format("woff2"),
-    url("fonts/Quicksand-Bold.woff") format("woff");
-  font-weight: 700;
-}
-@font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?a8rx6o");
-  src: url("../fonts/icomoon.eot?a8rx6o#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?a8rx6o") format("truetype"),
-    url("../fonts/icomoon.woff?a8rx6o") format("woff"),
-    url("../fonts/icomoon.svg?a8rx6o#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?70c0eu");
+  src: url("../fonts/icomoon.eot?70c0eu#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?70c0eu") format("truetype"),
+    url("../fonts/icomoon.woff?70c0eu") format("woff"),
+    url("../fonts/icomoon.svg?70c0eu#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -61,6 +37,9 @@
 }
 .icon-eye:before {
   content: "\f06e";
+}
+.icon-heart-o:before {
+  content: "\f08a";
 }
 .icon-phone:before {
   content: "\f095";

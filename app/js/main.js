@@ -27,3 +27,13 @@ $(".js-range-slider").ionRangeSlider({
   to: 300,
   prefix: "$",
 });
+$(".filterbar__list").on("click", function () {
+  $(".filterbar__list").addClass("active");
+  $(".filterbar__grid").removeClass("active");
+  $(".products__items").addClass("list");
+});
+$(".filterbar__grid").on("click", function () {
+  $(".filterbar__list").removeClass("active");
+  $(".filterbar__grid").addClass("active");
+  $(".products__items").removeClass("list");
+});
