@@ -101,6 +101,9 @@
     font-weight: 500;
     line-height: 42px;
     text-transform: uppercase;
+    &:hover {
+      color: $blue;
+    }
   }
   li + li {
     margin-left: 33px;
@@ -482,6 +485,106 @@
   }
   .checkout {
     background-color: $blue;
+  }
+}
+.products__box,
+.home__box,
+.wordpress__box,
+.pages__box {
+  position: relative;
+  min-height: 80px;
+  padding-top: 20px;
+  &:hover {
+    .products__menu,
+    .home__menu,
+    .wordpress__menu,
+    .pages__menu {
+      padding: 20px 0;
+      height: auto;
+      overflow: visible;
+      margin-bottom: 20px;
+    }
+  }
+  .products__menu,
+  .home__menu,
+  .wordpress__menu,
+  .pages__menu {
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: all 0.3s;
+    padding: 0;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    min-width: 270px;
+    z-index: 1;
+    border-top: 1px solid $blue;
+    li {
+      display: block;
+      margin: 0;
+      background-color: #fff;
+      padding-bottom: 10px;
+    }
+    a {
+      text-transform: none;
+      display: block;
+      width: 230px;
+      padding-left: 15px;
+      margin: 0 auto;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $blue;
+        border-radius: 5px;
+        color: #fff;
+      }
+    }
+  }
+}
+.pages__box {
+  position: relative;
+  min-height: 80px;
+  padding-top: 20px;
+  .pages__menu {
+    position: absolute;
+    width: 1170px;
+    left: -470px;
+    top: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  .pages__item {
+    max-width: 430px;
+    background-color: #fff;
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 30px;
+
+      padding-right: 30px;
+      ul {
+        max-width: 200px;
+      }
+      a {
+        font-size: 15px;
+        color: #54667a;
+        &:hover {
+          background-color: #fff;
+          color: #54667a;
+        }
+      }
+    }
+    &-title {
+      color: #000;
+      font-weight: 500;
+      padding: 0 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #f1ecf9;
+      padding-bottom: 20px;
+    }
   }
 }
 //end header
