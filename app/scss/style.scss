@@ -1654,7 +1654,8 @@
 
 .search,
 .error__top-inner,
-.terms__top-inner {
+.terms__top-inner,
+.how__top-inner {
   background-image: linear-gradient(
     -90deg,
     rgb(13, 62, 242) 0%,
@@ -1762,7 +1763,6 @@
     border-radius: 4px;
   }
 }
-
 .terms__item {
   background-color: #fff;
 
@@ -1778,6 +1778,59 @@
     color: #555;
     padding: 30px 30px 60px;
   }
+}
+.how__title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 50px;
+  span {
+    display: block;
+    font-weight: 300;
+  }
+  margin-bottom: 60px;
+}
+.step__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.steps__inner {
+  padding-top: 100px;
+
+  .step__info {
+    max-width: 460px;
+  }
+  .step__title {
+    font-size: 30px;
+    font-weight: 42px;
+    margin-bottom: 30px;
+  }
+  .step__text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  .step__btn {
+    background-color: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    color: $blue;
+    width: 170px;
+    display: block;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 9px 5px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+}
+.steps__inner-accent {
+  background-color: #eff1f5;
 }
 
 // end search
@@ -2123,7 +2176,7 @@ aside {
     font-size: 16px;
     border: 1px solid #fff;
     padding: 10px 5px;
-    border-radius: 26px;
+    border-radius: 30px;
     transition: all 0.3s;
     &:hover {
       background-color: #fff;
